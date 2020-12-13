@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Cash-on-delivery {% endblock %}
+
+{% block content %}
+<hr>
+<div class="container">
+<h2>Thank you !! We have recieved your order.</h2>
+<p> Your order number is <b>{{order.id}}</b>. Please keep your cash handy at the time of delivery.</p>
+<hr>
+<a href="{% url 'ecomapp:customerprofile' %}">View orders</a>
+|
+<a href="/">Continue shopping</a>
+    </div>
+{%endblock%}

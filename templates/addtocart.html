@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Add to cart{% endblock %}
+
+{% block content %}
+<hr>
+<div class="container">
+    <h2>Product added to cart Sucessfully</h2>
+
+</div>
+<hr>
+<a href="/ "><b>Back to home Page</b></a> |
+<a href=" {% url 'ecomapp:mycart' %}"><b>Go to Cart</b> </a>
+
+
+{% endblock %}
